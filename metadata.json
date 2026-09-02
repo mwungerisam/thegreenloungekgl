@@ -1,0 +1,6 @@
+{
+  "name": "The Green Lounge",
+  "description": "Discover The Green Lounge in Kicukiro, Kigali — a rooftop bar and restaurant offering food, drinks, entertainment, music and memorable nights at Silverback Mall.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

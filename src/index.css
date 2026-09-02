@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  
+  --color-brand-charcoal: #0c0e0d;
+  --color-brand-card: #141715;
+  --color-brand-cream: #faf9f6;
+  --color-brand-green-deep: #16301d;
+  --color-brand-green-accent: #2e6b3e;
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-muted: #c5a880;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-charcoal);
+    color: var(--color-brand-cream);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom styles for masonry and aesthetic UI effects */
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0e0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e6b3e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Ambient backlight glow for nightlife vibe */
+.ambient-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(46, 107, 62, 0.15) 0%, rgba(12, 14, 13, 0) 70%);
+}
+
+.ambient-gold-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(197, 168, 128, 0.08) 0%, rgba(12, 14, 13, 0) 70%);
+}
+
